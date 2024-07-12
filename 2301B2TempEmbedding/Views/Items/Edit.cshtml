@@ -5,48 +5,45 @@
     Layout = "~/Views/Shared/_Layout1.cshtml";
 }
 
-<h1>Edit</h1>
-
-<h4>Item</h4>
+<h1>Edit Items</h1>
 <hr />
-<div class="row">
-    <div class="col-md-4">
-        <form asp-action="Edit">
+<div class="row bg-primary text-capitalize text-dark text-uppercase font-monospace fw-bold">
+    <div class="col-lg-12">
+        <form asp-action="Edit" enctype="multipart/form-data">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <input type="hidden" asp-for="Id" />
-            <div class="form-group">
-                <label asp-for="Name" class="control-label"></label>
+            <div class="form-group p-3">
+                <label asp-for="Name" class="control-label">ITEM NAME</label>
                 <input asp-for="Name" class="form-control" />
                 <span asp-validation-for="Name" class="text-danger"></span>
             </div>
-            <div class="form-group">
-                <label asp-for="Description" class="control-label"></label>
+            <div class="form-group p-3">
+                <label asp-for="Description" class="control-label">ITEM DESCRIPTION</label>
                 <input asp-for="Description" class="form-control" />
                 <span asp-validation-for="Description" class="text-danger"></span>
             </div>
-            <div class="form-group">
-                <label asp-for="Price" class="control-label"></label>
+            <div class="form-group p-3">
+                <label asp-for="Price" class="control-label">ITEM PRICE</label>
                 <input asp-for="Price" class="form-control" />
                 <span asp-validation-for="Price" class="text-danger"></span>
             </div>
-            <div class="form-group">
-                <label asp-for="Image" class="control-label"></label>
-                <input asp-for="Image" class="form-control" />
-                <span asp-validation-for="Image" class="text-danger"></span>
+            <div class="form-group p-3">
+                <label asp-for="Image" class="control-label">ITEM IMAGE</label>
+                <input type="file" name="image" />
             </div>
-            <div class="form-group">
-                <label asp-for="CatId" class="control-label"></label>
-                <select asp-for="CatId" class="form-control" asp-items="ViewBag.CatId"></select>
+            <div class="form-group p-3">
+                <label asp-for="CatId" class="control-label">CATEGORY NAME</label>
+                <select asp-for="CatId" class="form-control" asp-items="@(new SelectList(ViewBag.Categories, "Value", "Text"))"></select>
                 <span asp-validation-for="CatId" class="text-danger"></span>
             </div>
-            <div class="form-group">
-                <input type="submit" value="Save" class="btn btn-primary" />
+            <div class="form-group mt-3 mb-3 text-center ">
+                <input type="submit" value="Save" class="btn btn-dark col-lg-11 text-center" />
             </div>
         </form>
     </div>
 </div>
 
-<div>
+<div class ="mt-4">
     <a asp-action="Index">Back to List</a>
 </div>
 

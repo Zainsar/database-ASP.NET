@@ -1,0 +1,35 @@
+﻿@model _2301B2TempEmbedding.Models.Category
+
+@{
+    ViewData["Title"] = "Edit";
+    Layout = "~/Views/Shared/_Layout1.cshtml";
+}
+
+<h1>Edit Category</h1>
+<hr />
+<div class="row bg-secondary text-capitalize text-dark text-uppercase font-monospace fw-bold">
+    <div class="col-lg-12">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="CatId" />
+            <div class="form-group p-3">
+                <label asp-for="CatName" class="control-label">CATEGORY NAME</label>
+                <input asp-for="CatName" class="form-control" />
+                <span asp-validation-for="CatName" class="text-danger"></span>
+            </div>
+            <div class="form-group p-3">
+                <label asp-for="CatDescription" class="control-label">CATEGORY DESCRIPTION</label>
+                <input asp-for="CatDescription" class="form-control" />
+                <span asp-validation-for="CatDescription" class="text-danger"></span>
+            </div>
+            <div class="form-group mt-3 mb-3 text-center ">
+                <input type="submit" value="Save" class="btn btn-dark col-lg-11 text-center" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div class="mt-4">
+    <a asp-action="Index">Back to List</a>
+</div>
+

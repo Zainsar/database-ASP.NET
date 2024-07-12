@@ -1,0 +1,42 @@
+﻿@model IEnumerable<_2301B2TempEmbedding.Models.Category>
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout1.cshtml";
+}
+
+<h1>All Category</h1>
+
+<p>
+    <a class="btn btn-success text-light" asp-action="Create">Create New</a>
+</p>
+<table class="table bg-secondary table-lg text-capitalize text-dark text-center text-uppercase font-monospace fw-bolder ">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.CatName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CatDescription)
+            </th>
+            <th>Action</th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.CatName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CatDescription)
+            </td>
+            <td>
+                <a class="btn btn-warning text-dark" asp-action="Edit" asp-route-id="@item.CatId">Edit</a> |
+                @* <a asp-action="Details" asp-route-id="@item.CatId">Details</a> | *@
+                <a class="btn btn-danger text-dark" asp-action="Delete" asp-route-id="@item.CatId">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

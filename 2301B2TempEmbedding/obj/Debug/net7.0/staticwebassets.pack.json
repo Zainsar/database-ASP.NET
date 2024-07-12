@@ -461,6 +461,10 @@
       "PackagePath": "staticwebassets\\css\\style.css"
     },
     {
+      "Id": "C:\\Users\\Mutahir\\Documents\\Github\\database-ASP.NET\\2301B2TempEmbedding\\wwwroot\\f4c04c57-d2da-4304-8189-38b61719dc6e.png",
+      "PackagePath": "staticwebassets\\f4c04c57-d2da-4304-8189-38b61719dc6e.png"
+    },
+    {
       "Id": "C:\\Users\\Mutahir\\Documents\\Github\\database-ASP.NET\\2301B2TempEmbedding\\wwwroot\\img\\about.jpg",
       "PackagePath": "staticwebassets\\img\\about.jpg"
     },
@@ -959,6 +963,18 @@
     {
       "Id": "C:\\Users\\Mutahir\\Documents\\Github\\database-ASP.NET\\2301B2TempEmbedding\\wwwroot\\scss\\bootstrap\\scss\\vendor\\_rfs.scss",
       "PackagePath": "staticwebassets\\scss\\bootstrap\\scss\\vendor\\_rfs.scss"
+    },
+    {
+      "Id": "C:\\Users\\Mutahir\\Documents\\Github\\database-ASP.NET\\2301B2TempEmbedding\\wwwroot\\uploads\\2673c605-c9e1-4060-a7eb-2e1862d66760.jpg",
+      "PackagePath": "staticwebassets\\uploads\\2673c605-c9e1-4060-a7eb-2e1862d66760.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Mutahir\\Documents\\Github\\database-ASP.NET\\2301B2TempEmbedding\\wwwroot\\uploads\\9bfe1a54-e3b9-43bc-91e5-a8ccf44bc59a.png",
+      "PackagePath": "staticwebassets\\uploads\\9bfe1a54-e3b9-43bc-91e5-a8ccf44bc59a.png"
+    },
+    {
+      "Id": "C:\\Users\\Mutahir\\Documents\\Github\\database-ASP.NET\\2301B2TempEmbedding\\wwwroot\\uploads\\b9d87976-19d0-424c-b2fd-6406fd0ae858.jpg",
+      "PackagePath": "staticwebassets\\uploads\\b9d87976-19d0-424c-b2fd-6406fd0ae858.jpg"
     },
     {
       "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.2301B2TempEmbedding.Microsoft.AspNetCore.StaticWebAssets.props",

@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("2301B2TempEmbedding")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+35c749f8408f4120659b98531e7f3cba08bfa4f9")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e10a5a416ac944ded864d4ccb368b271f109fb99")]
 [assembly: System.Reflection.AssemblyProductAttribute("2301B2TempEmbedding")]
 [assembly: System.Reflection.AssemblyTitleAttribute("2301B2TempEmbedding")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
